@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var number1 = prompt("Enter Number 1");
+    var number2 = prompt("Enter Number 2");
+    var n1 = parseInt(number1);
+    var n2 = parseInt(number2);
+    var operation = prompt("Enter Operation");
+    if (operation== "+"){
+        document.write(n1+n2);
+    }
+    else if (operation== "-"){
+        document.write(n1-n2);
+    }
+    else if (operation== "*"){
+        document.write(n1*n2);
+    }
+    else if (operation== "/"){
+        document.write(n1/n2);
+    }
+    else{
+        document.write("Invalid")
+    }
+    document.write(typeof(number1));
+    document.write(typeof(number2));
+    document.write(typeof(n1));
+    document.write(typeof(n2));
+</script>
