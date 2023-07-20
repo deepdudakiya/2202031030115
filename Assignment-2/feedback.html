@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Feedback Form</title>
+    <link href="/Assignment-2/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Website Feedback Form</h1>
+
+        <form id="feedbackForm">
+            <div class="form-group">
+                <i class="fa-solid fa-user"></i>
+                <label for="name">Enter Your Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <i class="fa-solid fa-envelope"></i>
+                <label for="email">Your Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group radio-group">
+                <i class="fa-solid fa-eye"></i>
+                <label>Is this the first time you have visited the website?</label><br/><br/>
+                <label><input type="radio" name="rating" value="5">Yes</label>
+                <label><input type="radio" name="rating" value="4">No</label>
+            </div>
+
+            <div class="form-group">
+                <i class="fa-solid fa-message"></i>
+                <label for="message">What is the Primary reason you came to this site?</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <label for="improvements">Did you find what you needed?<br><br></label>
+                <input type="checkbox" id="services" name="services" value="Services">
+                <label for="services">Yes, all of it.</label><br/><br/>
+                <input type="checkbox" id="services" name="services" value="Services">
+                <label for="services">Yes, some of it.</label><br/><br/>
+                <input type="checkbox" id="services" name="services" value="Services">
+                <label for="services">No, none of it.</label>
+            </div>
+           
+            <div class="rate">
+                <i id="rating-icon" class="fa-solid fa-face-smile"></i>    
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div><br><br><br>
+              
+            <div class="form-group">
+                <center><button type="submit">Send your feedback </button></center>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
