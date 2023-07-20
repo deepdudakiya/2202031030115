@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Feedback Form</title>
+    <link href="/Assignment-2/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Website Feedback Form</h1>
+
+        <form id="feedbackForm" method="post" action="feedback.php">
+
+        <form id="feedbackForm">
+            <div class="form-group">
+                <i class="fa-solid fa-user"></i>
+                <label for="name">Enter Your Full Name:</label>
+                <input type="text" onkeydown="return /[a-z]/i.test(event.key)" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <i class="fa-solid fa-envelope"></i>
+                <label for="email">Your Email Address:</label>
+                <input type="email"pattern="^[a-zA-Z0-9]+@gmail\.com$" id="email" name="email" required>
+            </div>
+
+            <div class="form-group radio-group">
+                <i class="fa-solid fa-eye"></i>
+                <label>Is this the first time you have visited the website?</label><br/><br/>
+                <label><input type="radio" name="rating" value="Yes">Yes</label>
+                <label><input type="radio" name="rating" value="No">No</label>
+            </div>
+
+            <div class="form-group">
+                <i class="fa-solid fa-message"></i>
+                <label for="message">What is the Primary reason you came to this site?</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group radio-group">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <label>Did you find what you needed?</label><br/><br/>
+                <label><input type="radio" name="services" value="Yes, all of it.">Yes, all of it.</label>
+                <br><br>
+                <label><input type="radio" name="services" value="Yes, some f it.">Yes, some f it.</label>
+                <br><br>
+                <label><input type="radio" name="services" value="No, none of it.">No, none of it.</label>
+            </div>
+           
+            <div class="form-group">
+                <center><button type="submit">Send your feedback </button></center>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
